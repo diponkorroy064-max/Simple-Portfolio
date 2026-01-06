@@ -104,7 +104,7 @@ nav .menu a {
 }
 
 .banner-content h1 {
-    font-size: 85px;
+    font-size: 70px;
     font-weight: bold;
     color: #181818;
     margin-bottom: 20px;
@@ -133,22 +133,23 @@ nav .menu a {
     margin: 0 auto;
     text-align: center;
     background-color: #FFF8F3;
-    padding: 131px 156px;
+    padding: 131px 140px;
 }
 
 .about-container .about-info {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-around; 
+    /* gap: 30px; */
 }
 
 .about-info .info-card p {
-    font-size: 20px;
+    font-size: 17px;
     line-height: 30px;
     color: #757575;
 }
 
 .about-info .info-card h4{
-    font-size: 20px;
+    font-size: 18px;
 }
 
 #skills{
@@ -169,7 +170,8 @@ nav .menu a {
 .skill-box .skill-card{
     padding: 30px;
     /* border: 1px solid red; */
-    box-shadow: 0 6px 50px 0 #0000004f;
+    box-shadow: 0 6px 50px 0 #433e3e7a;
+    border-radius: 5px;
     max-width: 267px;
 }
 
@@ -187,7 +189,7 @@ nav .menu a {
 .skill-card p{
     font-size: 16px;
         color: #757575;
-        line-height: 28px;
+        line-height: 25px;
 }
 
 #resume{
