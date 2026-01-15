@@ -200,22 +200,15 @@ nav .menu a {
 }
 
 /* resume section related styles */
-#resume{
-    padding-top: 130px;
-}
-
-#resume-head-txt{
-    /* background-color: aqua; */
-    color: #181818;
-    font-size: 25px;
-    text-align: center;
+.resume-container{
+    margin-top: 130px;
 }
 
 #resume .resume-txt-container{
     display: flex;
     gap: 50px;
     max-width: 71%;
-    margin: 60px auto 0;
+    margin: 40px auto 0;
 }
 
 .resume-container hr{
@@ -274,14 +267,13 @@ nav .menu a {
 .footer-container h2{
     color: #181818;
     font-size: 35px;
-    margin-bottom: 20px;
-
+    margin-bottom: 16px;
 }
 
 .footer-container .social p{
     color: #474747;
     line-height: 25px;
-    font-size: 16px;
+    font-size: 10px;
     margin-bottom: 30px;
 }
 
@@ -297,15 +289,6 @@ nav .menu a {
     border-radius: 5px;
     color: #757575;
 }
-
-
-
-
-
-
-
-
-
 
 
 
