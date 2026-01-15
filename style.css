@@ -21,6 +21,13 @@
     cursor: pointer;
 }
 
+.btn:hover {
+    background: white;
+    color: #FD6E0A;
+    border: 0.5px solid rgba(0, 0, 0, 0.272);
+    cursor: pointer;
+}
+
 .section-heading {
     max-width: 827px;
     text-align: center;
@@ -29,12 +36,12 @@
 
 .section-heading h2 {
     font-size: 35px;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
 }
 
 .section-heading p {
     font-size: 18px;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
     line-height: 30px;
     color: #757575;
 }
@@ -43,13 +50,18 @@
     text-align: center;
 }
 
-/* main style */
+/* header & hero section related style */
 #header {
     background-color: #FFF8F3;
     background: url('images/developer.png'), url('images/header_bg.png'), #FFF8F3;
     background-position: 30px 38px, bottom right;
     background-repeat: no-repeat;
     padding-top: 50px;
+}
+
+.header-container{
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 .logo h2 {
@@ -62,8 +74,7 @@
 }
 
 nav {
-    width: 71%;
-    max-width: 1140px;
+    max-width: 71%;
     /* border: 1px solid red; */
     margin: 0 auto;
     display: flex;
@@ -80,6 +91,7 @@ nav .menu {
 
 nav .menu a {
     font-size: 20px;
+    font-weight: 500;
     color: #474747;
     text-decoration: none;
 }
@@ -118,59 +130,54 @@ nav .menu a {
 }
 
 #banner .banner-img img {
-    max-width: 585px;
+    max-width: 584px;
     vertical-align: middle;
 }
 
-#about {
-    padding-top: 130px;
 
-}
-
-#about .about-container {
-    width: 71%;
-    max-width: 1140px;
+/* About section related styles */
+.about-container {
+    max-width: 71%;
     margin: 0 auto;
     text-align: center;
     background-color: #FFF8F3;
+    border-radius: 10px;
+    margin-top: 130px;
     padding: 131px 140px;
 }
 
 .about-container .about-info {
     display: flex;
-    justify-content: space-around; 
+    justify-content: space-between; 
     /* gap: 30px; */
 }
 
 .about-info .info-card p {
-    font-size: 17px;
+    font-size: 16px;
     line-height: 30px;
     color: #757575;
 }
 
 .about-info .info-card h4{
-    font-size: 18px;
+    font-size: 16px;
 }
 
-#skills{
-    padding-top: 130px;
-}
-
-.skill-box{
-    display: flex;
-    gap: 24px;
-}
-
+/* Skills section related styles */
 .skill-container{
-    width: 71%;
-    max-width: 1140px;
+    max-width: 71%;
     margin: 0 auto;
+    margin-top: 130px;
+}
+
+.skill-box {
+    display: flex;
+    gap: 24px; 
 }
 
 .skill-box .skill-card{
-    padding: 30px;
+    padding: 20px;
     /* border: 1px solid red; */
-    box-shadow: 0 6px 50px 0 #433e3e7a;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.25);
     border-radius: 5px;
     max-width: 267px;
 }
@@ -192,23 +199,30 @@ nav .menu a {
         line-height: 25px;
 }
 
+/* resume section related styles */
 #resume{
     padding-top: 130px;
 }
 
-#resume .resume-container{
+#resume-head-txt{
+    /* background-color: aqua; */
+    color: #181818;
+    font-size: 25px;
+    text-align: center;
+}
+
+#resume .resume-txt-container{
     display: flex;
-    gap: 24px;
-    width: 71%;
-    max-width: 1140px;
-    margin: 113px auto 0;
+    gap: 50px;
+    max-width: 71%;
+    margin: 60px auto 0;
 }
 
 .resume-container hr{
     margin: 30px 0;
 }
 
-#resume .resume-container .section-title{
+#resume .resume-txt-container .section-title{
     color: #474747;
     font-size: 30px;
     margin-bottom: 30px;
@@ -239,6 +253,7 @@ nav .menu a {
     color: #757575;
 }
 
+/* footer section related styles */
 #footer{
     margin-top: 130px;
     background-color: #FFF8F3;
@@ -246,8 +261,7 @@ nav .menu a {
 }
 
 .footer-container{
-    width: 71%;
-    max-width: 1140px;
+    max-width: 71%;
     margin: 0 auto;
     display: flex;
     gap: 116px;
@@ -255,7 +269,6 @@ nav .menu a {
 
 .footer-container .social{
     max-width: 562px;
-
 }
 
 .footer-container h2{
@@ -274,7 +287,6 @@ nav .menu a {
 
 .footer-container .icons a{
     margin-right: 24px;
-
 }
 
 .footer-container form input[type='text'], .footer-container form textarea {
